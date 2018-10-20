@@ -110,22 +110,35 @@
 
   <meta name="description" content="1.简介图像互换格式（GIF，Graphics Interchange Format）是一种位图图形文件格式，以8位色（即256种颜色）重现真彩色的图像。它实际上是一种压缩文档，采用LZW压缩算法进行编码，有效地减少了图像文件在网络上传输的时间。 2.LZW算法 LZW算法又叫“串表压缩算法”，全称Lempel-Ziv-Welch Encoding，是通过建立一个字符串表，用较短的代码来表示较长的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GIF文件格式解析">
-<meta property="og:url" content="https://andy1994.github.io/2018/10/20/GIF文件格式解析/index.html">
+<meta property="og:title" content="GIF文件格式">
+<meta property="og:url" content="https://andy1994.github.io/2018/10/20/GIF文件格式/index.html">
 <meta property="og:site_name" content="Wadu Hek">
 <meta property="og:description" content="1.简介图像互换格式（GIF，Graphics Interchange Format）是一种位图图形文件格式，以8位色（即256种颜色）重现真彩色的图像。它实际上是一种压缩文档，采用LZW压缩算法进行编码，有效地减少了图像文件在网络上传输的时间。 2.LZW算法 LZW算法又叫“串表压缩算法”，全称Lempel-Ziv-Welch Encoding，是通过建立一个字符串表，用较短的代码来表示较长的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-20T04:40:30.397Z">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/gif_demo.gif">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/1.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/2.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/3.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/4.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/5.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/6.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/7.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/8.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/9.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/10.jpeg">
+<meta property="og:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/11.jpeg">
+<meta property="og:updated_time" content="2018-10-20T05:04:58.609Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GIF文件格式解析">
+<meta name="twitter:title" content="GIF文件格式">
 <meta name="twitter:description" content="1.简介图像互换格式（GIF，Graphics Interchange Format）是一种位图图形文件格式，以8位色（即256种颜色）重现真彩色的图像。它实际上是一种压缩文档，采用LZW压缩算法进行编码，有效地减少了图像文件在网络上传输的时间。 2.LZW算法 LZW算法又叫“串表压缩算法”，全称Lempel-Ziv-Welch Encoding，是通过建立一个字符串表，用较短的代码来表示较长的">
+<meta name="twitter:image" content="https://andy1994.github.io/2018/10/20/GIF文件格式/gif_demo.gif">
 
 
 
 
 
 
-  <link rel="canonical" href="https://andy1994.github.io/2018/10/20/GIF文件格式解析/"/>
+  <link rel="canonical" href="https://andy1994.github.io/2018/10/20/GIF文件格式/"/>
 
 
 
@@ -135,7 +148,7 @@
   };
 </script>
 
-  <title>GIF文件格式解析 | Wadu Hek</title>
+  <title>GIF文件格式 | Wadu Hek</title>
   
 
 
@@ -284,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://andy1994.github.io/2018/10/20/GIF文件格式解析/">
+    <link itemprop="mainEntityOfPage" href="https://andy1994.github.io/2018/10/20/GIF文件格式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Andy1994">
@@ -301,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">GIF文件格式解析
+          <h1 class="post-title" itemprop="name headline">GIF文件格式
               
             
           </h1>
@@ -326,7 +339,7 @@
                 
               
 
-              <time title="创建时间：2018-10-20 12:35:19 / 修改时间：12:40:30" itemprop="dateCreated datePublished" datetime="2018-10-20T12:35:19+08:00">2018-10-20</time>
+              <time title="创建时间：2018-10-20 12:35:19 / 修改时间：13:04:58" itemprop="dateCreated datePublished" datetime="2018-10-20T12:35:19+08:00">2018-10-20</time>
             
 
             
@@ -365,19 +378,17 @@
 
       
         <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>图像互换格式（GIF，Graphics Interchange Format）是一种位图图形文件格式，以8位色（即256种颜色）重现真彩色的图像。它实际上是一种压缩文档，采用LZW压缩算法进行编码，有效地减少了图像文件在网络上传输的时间。</p>
-<h2 id="2-LZW算法"><a href="#2-LZW算法" class="headerlink" title="2.LZW算法"></a>2.LZW算法</h2><ol>
+<h2 id="2-LZW算法"><a href="#2-LZW算法" class="headerlink" title="2.LZW算法"></a>2.LZW算法</h2><ul>
 <li>LZW算法又叫“串表压缩算法”，全称Lempel-Ziv-Welch Encoding，是通过建立一个字符串表，用较短的代码来表示较长的字符串来实现压缩。字符串和编码的对应关系是在压缩过程中动态生成的，并且隐含在压缩数据中，解压的时候根据表来进行恢复，算是一种无损压缩。</li>
 <li>LZW压缩算法的基本原理：提取原始文本文件数据中的不同字符，基于这些字符创建一个编译表，然后用编译表中的字符的索引来替代原始文本文件数据中的相应字符，减少原始数据大小。和调色板图像的实现原理差不多，不过这里的编译表不是事先创建好的，而是根据原始文件数据动态创建的，解码时还要从已编码的数据中还原出原来的编译表。<h2 id="3-特性"><a href="#3-特性" class="headerlink" title="3.特性"></a>3.特性</h2></li>
 <li>优秀的压缩算法使其在一定程度上保证图像质量的同时将体积变得很小。</li>
 <li>可插入多帧，从而实现动画效果。</li>
 <li>可设置透明色以产生对象浮现于背景之上的效果。</li>
-<li>由于采用了8位压缩，最多只能处理256种颜色，故不宜应用于真彩色图片。<h2 id="4-技术简介"><a href="#4-技术简介" class="headerlink" title="4.技术简介"></a>4.技术简介</h2><h3 id="4-1-文件结构"><a href="#4-1-文件结构" class="headerlink" title="4.1 文件结构"></a>4.1 文件结构</h3>一个 GIF 文件的结构可分为文件头（File Header）、GIF 数据流（GIF Data Stream）和文件终结器（Trailer）三个部分。文件头包含 GIF 文件署名（Signature）和版本号（Version）；GIF 数据流由控制标识符、图像块（Image Block）和其他的一些扩展块组成；文件终结器只有一个值为 0x3B 的字符（“;”）表示文件结束。<h3 id="4-2-文件头"><a href="#4-2-文件头" class="headerlink" title="4.2 文件头"></a>4.2 文件头</h3><h3 id="4-3-逻辑屏幕标识符（Logical-Screen-Descriptor）"><a href="#4-3-逻辑屏幕标识符（Logical-Screen-Descriptor）" class="headerlink" title="4.3 逻辑屏幕标识符（Logical Screen Descriptor）"></a>4.3 逻辑屏幕标识符（Logical Screen Descriptor）</h3>这一部分由7个字节组成，定义了 GIF 图像的大小（Logical Screen Width &amp; Height）、颜色深度（Color Bits）、背景色（Background Color Index）以及有无全局颜色列表（Global Color Table）和颜色列表的索引数（Index Count），具体描述见下表：<h3 id="4-4-全局颜色列表（Global-Color-Table）"><a href="#4-4-全局颜色列表（Global-Color-Table）" class="headerlink" title="4.4 全局颜色列表（Global Color Table）"></a>4.4 全局颜色列表（Global Color Table）</h3>全局颜色列表必须紧跟在逻辑屏幕标识符后面，每个颜色列表索引条目由三个字节组成，按R、G、B的顺序排列。<h3 id="4-5-图像标识符（Image-Descriptor）"><a href="#4-5-图像标识符（Image-Descriptor）" class="headerlink" title="4.5 图像标识符（Image Descriptor）"></a>4.5 图像标识符（Image Descriptor）</h3>一个GIF文件内可以包含多幅图像，一幅图像结束之后紧接着下是一幅图像的标识符，图像标识符以0x2C(‘,’)字符开始，定义紧接着它的图像的性质，包括图像相对于逻辑屏幕边界的偏移量、图像大小以及有无局部颜色列表和颜色列表大小，由10个字节组成：<h3 id="4-6-局部颜色列表（Local-Color-Table）"><a href="#4-6-局部颜色列表（Local-Color-Table）" class="headerlink" title="4.6 局部颜色列表（Local Color Table）"></a>4.6 局部颜色列表（Local Color Table）</h3>如果上面的局部颜色表标志设置了的话，则需要在这里（紧跟在图像标识符之后）定义一个局部颜色列表以供紧接着它的图像使用。如果GIF文件没有全局颜色表，也没有局部颜色表，可以自己创建一个颜色表，或使用系统的颜色列表。局部颜色表的排列方式和全局颜色表一样。<h3 id="4-7-图像数据（Table-Based-Image-Data）"><a href="#4-7-图像数据（Table-Based-Image-Data）" class="headerlink" title="4.7 图像数据（Table-Based Image Data）"></a>4.7 图像数据（Table-Based Image Data）</h3>两部分组成：LZW编码长度（LZW Minimum Code Size）和图像数据（Image Data）。GIF图像数据使用了LZW压缩算法，大大减小了图像数据的大小。图像数据在压缩前有两种排列格式：连续的和交织的（由图像标识符的交织标志控制）。连续方式按从左到右、从上到下的顺序排列图像的光栅数据；交织图像按下面的方法处理光栅数据：<br>创建四个通道（Pass）保存数据，每个通道提取不同行的数据：</li>
-</ol>
-<ul>
+<li>由于采用了8位压缩，最多只能处理256种颜色，故不宜应用于真彩色图片。<h2 id="4-技术简介"><a href="#4-技术简介" class="headerlink" title="4.技术简介"></a>4.技术简介</h2>先看一个GIF：<br><img src="/2018/10/20/GIF文件格式/gif_demo.gif" alt=""><br>看它的16进制数据：<br><img src="/2018/10/20/GIF文件格式/1.jpeg" alt=""><h3 id="4-1-文件结构"><a href="#4-1-文件结构" class="headerlink" title="4.1 文件结构"></a>4.1 文件结构</h3>一个 GIF 文件的结构可分为文件头（File Header）、GIF 数据流（GIF Data Stream）和文件终结器（Trailer）三个部分。文件头包含 GIF 文件署名（Signature）和版本号（Version）；GIF 数据流由控制标识符、图像块（Image Block）和其他的一些扩展块组成；文件终结器只有一个值为 0x3B 的字符（“;”）表示文件结束。<br><img src="/2018/10/20/GIF文件格式/2.jpeg" alt=""><h3 id="4-2-文件头"><a href="#4-2-文件头" class="headerlink" title="4.2 文件头"></a>4.2 文件头</h3><img src="/2018/10/20/GIF文件格式/3.jpeg" alt=""><h3 id="4-3-逻辑屏幕标识符（Logical-Screen-Descriptor）"><a href="#4-3-逻辑屏幕标识符（Logical-Screen-Descriptor）" class="headerlink" title="4.3 逻辑屏幕标识符（Logical Screen Descriptor）"></a>4.3 逻辑屏幕标识符（Logical Screen Descriptor）</h3>这一部分由7个字节组成，定义了 GIF 图像的大小（Logical Screen Width &amp; Height）、颜色深度（Color Bits）、背景色（Background Color Index）以及有无全局颜色列表（Global Color Table）和颜色列表的索引数（Index Count），具体描述见下表：<br><img src="/2018/10/20/GIF文件格式/4.jpeg" alt=""><h3 id="4-4-全局颜色列表（Global-Color-Table）"><a href="#4-4-全局颜色列表（Global-Color-Table）" class="headerlink" title="4.4 全局颜色列表（Global Color Table）"></a>4.4 全局颜色列表（Global Color Table）</h3>全局颜色列表必须紧跟在逻辑屏幕标识符后面，每个颜色列表索引条目由三个字节组成，按R、G、B的顺序排列。<br><img src="/2018/10/20/GIF文件格式/5.jpeg" alt=""><h3 id="4-5-图像标识符（Image-Descriptor）"><a href="#4-5-图像标识符（Image-Descriptor）" class="headerlink" title="4.5 图像标识符（Image Descriptor）"></a>4.5 图像标识符（Image Descriptor）</h3>一个GIF文件内可以包含多幅图像，一幅图像结束之后紧接着下是一幅图像的标识符，图像标识符以0x2C(‘,’)字符开始，定义紧接着它的图像的性质，包括图像相对于逻辑屏幕边界的偏移量、图像大小以及有无局部颜色列表和颜色列表大小，由10个字节组成：<br><img src="/2018/10/20/GIF文件格式/6.jpeg" alt=""><h3 id="4-6-局部颜色列表（Local-Color-Table）"><a href="#4-6-局部颜色列表（Local-Color-Table）" class="headerlink" title="4.6 局部颜色列表（Local Color Table）"></a>4.6 局部颜色列表（Local Color Table）</h3>如果上面的局部颜色表标志设置了的话，则需要在这里（紧跟在图像标识符之后）定义一个局部颜色列表以供紧接着它的图像使用。如果GIF文件没有全局颜色表，也没有局部颜色表，可以自己创建一个颜色表，或使用系统的颜色列表。局部颜色表的排列方式和全局颜色表一样。<h3 id="4-7-图像数据（Table-Based-Image-Data）"><a href="#4-7-图像数据（Table-Based-Image-Data）" class="headerlink" title="4.7 图像数据（Table-Based Image Data）"></a>4.7 图像数据（Table-Based Image Data）</h3>两部分组成：LZW编码长度（LZW Minimum Code Size）和图像数据（Image Data）。GIF图像数据使用了LZW压缩算法，大大减小了图像数据的大小。图像数据在压缩前有两种排列格式：连续的和交织的（由图像标识符的交织标志控制）。连续方式按从左到右、从上到下的顺序排列图像的光栅数据；交织图像按下面的方法处理光栅数据：<br>创建四个通道（Pass）保存数据，每个通道提取不同行的数据：</li>
 <li>第一通道（Pass 1）提取从第0行开始每隔8行的数据；</li>
 <li>第二通道（Pass 2）提取从第4行开始每隔8行的数据；</li>
 <li>第三通道（Pass 3）提取从第2行开始每隔4行的数据；</li>
-<li>第四通道（Pass 4）提取从第1行开始每隔2行的数据；<h3 id="4-8-图形控制扩展（Graphic-Control-Extension）"><a href="#4-8-图形控制扩展（Graphic-Control-Extension）" class="headerlink" title="4.8 图形控制扩展（Graphic Control Extension）"></a>4.8 图形控制扩展（Graphic Control Extension）</h3>此为可选的（需要89a版本），可以放在一个图像块(图像标识符)或文本扩展块的前面，用来控制跟在它后面的第一个图像（或文本）的渲染（Render）形式，组成结构如下：<h3 id="4-9-注释扩展（Comment-Extension）"><a href="#4-9-注释扩展（Comment-Extension）" class="headerlink" title="4.9 注释扩展（Comment Extension）"></a>4.9 注释扩展（Comment Extension）</h3>此是可选的（需要89a版本），可以用来记录图形、版权、描述等任何的非图形和控制的纯文本数据（7-bit ASCII字符），注释扩展并不影响对图像数据流的处理，解码器完全可以忽略它。存放位置可以是数据流的任何地方，最好不要妨碍控制和数据块，推荐放在数据流的开始或结尾。具体组成：<h3 id="4-10-图形文本扩展（Plain-Text-Extension）"><a href="#4-10-图形文本扩展（Plain-Text-Extension）" class="headerlink" title="4.10 图形文本扩展（Plain Text Extension）"></a>4.10 图形文本扩展（Plain Text Extension）</h3>也是可选的（需要89a版本），用来绘制一个简单的文本图像，这一部分由用来绘制的纯文本数据（7-bit ASCII字符）和控制绘制的参数等组成。绘制文本借助于一个文本框（Text Grid）来定义边界，在文本框中划分多个单元格，每个字符占用一个单元，绘制时按从左到右、从上到下的顺序依次进行，直到最后一个字符或者占满整个文本框（之后的字符将被忽略，因此定义文本框的大小时应该注意到是否可以容纳整个文本），绘制文本的颜色索引使用全局颜色列表，没有则可以使用一个已经保存的前一个颜色列表。另外，图形文本扩展块也属于图形块（Graphic Rendering Block），可以在它前面定义图形控制扩展对它的表现形式进一步修改。图形文本扩展的组成：<h3 id="4-11-应用程序扩展（Application-Extension）"><a href="#4-11-应用程序扩展（Application-Extension）" class="headerlink" title="4.11 应用程序扩展（Application Extension）"></a>4.11 应用程序扩展（Application Extension）</h3>这是提供给应用程序自己使用的（需要89a版本），应用程序可以在这里定义自己的标识、信息等，组成如下：<h3 id="4-12-文件终结器（GIF-Trailer）"><a href="#4-12-文件终结器（GIF-Trailer）" class="headerlink" title="4.12 文件终结器（GIF Trailer）"></a>4.12 文件终结器（GIF Trailer）</h3>这一部分只有一个值的字节，标识GIF文件结束，固定值0x3B。</li>
+<li>第四通道（Pass 4）提取从第1行开始每隔2行的数据；<br><img src="/2018/10/20/GIF文件格式/7.jpeg" alt=""><h3 id="4-8-图形控制扩展（Graphic-Control-Extension）"><a href="#4-8-图形控制扩展（Graphic-Control-Extension）" class="headerlink" title="4.8 图形控制扩展（Graphic Control Extension）"></a>4.8 图形控制扩展（Graphic Control Extension）</h3>此为可选的（需要89a版本），可以放在一个图像块(图像标识符)或文本扩展块的前面，用来控制跟在它后面的第一个图像（或文本）的渲染（Render）形式，组成结构如下：<br><img src="/2018/10/20/GIF文件格式/8.jpeg" alt=""><h3 id="4-9-注释扩展（Comment-Extension）"><a href="#4-9-注释扩展（Comment-Extension）" class="headerlink" title="4.9 注释扩展（Comment Extension）"></a>4.9 注释扩展（Comment Extension）</h3>此是可选的（需要89a版本），可以用来记录图形、版权、描述等任何的非图形和控制的纯文本数据（7-bit ASCII字符），注释扩展并不影响对图像数据流的处理，解码器完全可以忽略它。存放位置可以是数据流的任何地方，最好不要妨碍控制和数据块，推荐放在数据流的开始或结尾。具体组成：<br><img src="/2018/10/20/GIF文件格式/9.jpeg" alt=""><h3 id="4-10-图形文本扩展（Plain-Text-Extension）"><a href="#4-10-图形文本扩展（Plain-Text-Extension）" class="headerlink" title="4.10 图形文本扩展（Plain Text Extension）"></a>4.10 图形文本扩展（Plain Text Extension）</h3>也是可选的（需要89a版本），用来绘制一个简单的文本图像，这一部分由用来绘制的纯文本数据（7-bit ASCII字符）和控制绘制的参数等组成。绘制文本借助于一个文本框（Text Grid）来定义边界，在文本框中划分多个单元格，每个字符占用一个单元，绘制时按从左到右、从上到下的顺序依次进行，直到最后一个字符或者占满整个文本框（之后的字符将被忽略，因此定义文本框的大小时应该注意到是否可以容纳整个文本），绘制文本的颜色索引使用全局颜色列表，没有则可以使用一个已经保存的前一个颜色列表。另外，图形文本扩展块也属于图形块（Graphic Rendering Block），可以在它前面定义图形控制扩展对它的表现形式进一步修改。图形文本扩展的组成：<br><img src="/2018/10/20/GIF文件格式/10.jpeg" alt=""><h3 id="4-11-应用程序扩展（Application-Extension）"><a href="#4-11-应用程序扩展（Application-Extension）" class="headerlink" title="4.11 应用程序扩展（Application Extension）"></a>4.11 应用程序扩展（Application Extension）</h3>这是提供给应用程序自己使用的（需要89a版本），应用程序可以在这里定义自己的标识、信息等，组成如下：<br><img src="/2018/10/20/GIF文件格式/11.jpeg" alt=""><h3 id="4-12-文件终结器（GIF-Trailer）"><a href="#4-12-文件终结器（GIF-Trailer）" class="headerlink" title="4.12 文件终结器（GIF Trailer）"></a>4.12 文件终结器（GIF Trailer）</h3>这一部分只有一个值的字节，标识GIF文件结束，固定值0x3B。</li>
 </ul>
 
       
